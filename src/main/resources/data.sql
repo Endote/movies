@@ -1,0 +1,4 @@
+insert into movie (id, title, year_Of_Release, category, description, grade) values
+    ('e93c6778-013f-4e9b-a81d-cb6ebdd07c00', 'The Shawshank Redemption', 1994, 'Drama', 'Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.', 9.3),
+    ('6f2f6cae-d67b-4f04-b41d-2dc0eee81bcf', 'The Godfather', 1972, 'Crime', 'Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.', 9.2),
+    ('3aa17417-5018-4d12-9d8e-9e0170e41e43', 'The Dark Knight', 2008, 'Action', 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.', 9);

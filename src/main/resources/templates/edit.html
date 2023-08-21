@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Movie</title>
+</head>
+<body>
+<h1>Edit Movie</h1>
+<form th:action="@{/movies/update}" th:object="${movie}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <label>Title: <input type="text" th:field="*{title}" /></label><br />
+    <span th:errors="*{title}" class="error-message"></span><br /> <!-- Use th:errors to display custom error message -->
+
+    <label>Year of Release: <input type="text" th:field="*{yearOfRelease}" /></label><br />
+    <span th:errors="*{yearOfRelease}" class="error-message"></span><br />
+
+    <label>Category: </label><input type="text" th:field="*{category}" /><br />
+    <span th:errors="*{category}" class="error-message"></span><br />
+
+    <label>Description: </label><input type="text" th:field="*{description}" /><br />
+    <span th:errors="*{description}" class="error-message"></span><br />
+
+    <label>Grade: </label><input type="text" th:field="*{grade}" /><br />
+    <span th:errors="*{grade}" class="error-message"></span><br />
+
+    <button type="submit">Save</button>
+</form>
+<a href="/movies">Back to List</a>
+</body>
+</html>

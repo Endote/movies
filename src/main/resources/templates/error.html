@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+<h1>Validation Error</h1>
+<p>Oops! There was a problem with your input. Please check the following fields:</p>
+<ul>
+    <li th:each="error : ${#fields.errors()}">
+        <span th:text="${error.field}"></span>: <span th:text="${error.defaultMessage}"></span>
+    </li>
+</ul>
+<a href="javascript:history.back()">Go Back</a>
+</body>
+</html>
